@@ -1,4 +1,4 @@
 <?php
-define('base_url','http://localhost:8080/');
-
+const site_root = __DIR__;
+const base_url = "http://localhost:8080/";
 ?>

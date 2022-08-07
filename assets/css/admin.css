@@ -17,16 +17,6 @@ a{
     text-decoration: none;
     color: inherit;
 }
-input{
-    padding: 10px 12px;
-    display: block;
-    width: 100%;
-    border-radius: 3px;
-    border: 1px solid #ececec;
-    line-height: 1.5rem;
-    color: #444444;
-
-}
 /*
     HEADER
  */
@@ -46,6 +36,7 @@ header h1{
 }
 header h1 a{
     color: #ffffff;
+    text-decoration: none;
 }
 header h1 a:hover{
     color: #ffffff;
@@ -88,108 +79,6 @@ header ul li ul li a{
     padding: 10px;
     background: white;
     color: darkcyan;
-}
-/*
-    SLIDER
- */
-
-.container{
-    width: 60%;
-    /*float: left;*/
-}
-.slider-title{
-    text-align: center;
-    padding: 30px 0px;
-}
-.carousel{
-    height: 600px;
-}
-.carousel-inner, .carousel-item{
-    height: 600px;
-    /*align-content: center;*/
-    border-radius: 5px;
-}
-.carousel-caption h5{
-    font-size: 2rem;
-    font-weight: 500;
-    background: rgba(0, 0, 0, 0.58);
-    max-width: 100%;
-    padding: 0.3em;
-    opacity: 0.5;
-}
-.carousel-caption-hack {
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    padding-top: 1.25rem;
-    padding-bottom: 0rem;
-    bottom: 0.05rem;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-}
-.carousel-caption h5 a{
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-}
-.carousel-caption h5 a:hover{
-    text-decoration: underline;
-}
-
-            /*MAIN*/
-.main-content h2{
-    margin: 30px 0;
-}
-.main-content .post{
-    margin-bottom: 3em;
-}
-.main-content .post_text{
-    background: #ffffff;
-    padding: 8px;
-    border-radius: 3px;
-}
-.main-content .post_text h3{
-    margin: 13px;
-
-}
-.main-content .post_text h3 a:hover{
-    text-decoration: underline;
-    color: #564949;
-}
-.main-content .post_text i{
-    margin: 0 14px 14px 0;
-}
-
-/*Sidebar*/
-.search{
-    margin-top: 100px;
-}
-.sidebar .section{
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 3px;
-    margin-bottom: 30px;
-}
-.sidebar .topics ul{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    border-top: 1px solid #e0e0e0;
-}
-.sidebar .topics ul li a{
-    display: block;
-    padding: 15px 0px 15px 0px;
-    border-bottom: 1px solid #e0e0e0;
-    transition: all 0.3s;
-    text-decoration: none;
-    font-weight: 500;
-    color: #5c5b5b;
-    font-size: 1.2em;
-}
-.sidebar .topics ul li a:hover{
-    padding-left: 10px;
-    transition: all 0.4s;
 }
 
 /*footer*/
@@ -268,33 +157,63 @@ header ul li ul li a{
     left: 0px;
     padding-top: 20px;
 }
-
-/*SINGLE POST*/
-
-.single_post{
-    margin-bottom:  30px;
+.sidebar{
+    background: rgba(22, 121, 187, 0.69);
+    margin: 1rem 0;
+    min-height: 388px;
 }
-.single_post .info{
-    margin: 20px 0;
-
+.sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: #d3d3d3;
 }
-.single_post .info i{
-    display: inline-block;
-    margin-right: 20px;
-
+.sidebar ul a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #ffffff;
 }
-.single_post a{
-    text-decoration: underline;
-}
-.single_post a:hover{
+.sidebar ul a:hover{
+    padding-left: 10px;
+    transition: all 0.3s;
+    color: #d3d3d3;
     text-decoration: none;
-    color: #025085;
 }
-
-/*forms*/
 
 form div.err{
     color: red;
     font-size: 0.8rem;
     font-style: italic;
 }
+.posts{
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+.posts h2{
+    text-align: center;
+    margin: 2rem 0 0 0.4rem;
+}
+.posts .title-table div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    font-weight: 700;
+}
+.posts .post div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+.posts .post .red{
+    color: #006669;
+}
+.posts .post .del{
+    color: red;
+}
+.posts .post .id{
+    font-weight: bold;
+}
+/*.add-post form div{*/
+/*    margin: 2rem 0;*/
+/*}*/

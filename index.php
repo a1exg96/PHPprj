@@ -1,4 +1,7 @@
-<?php include("app/include/header.php"); ?>
+<?php //include "app/database/db.php";
+      include "app/include/header.php";
+      include "app/controllers/topics.php";
+?>
 <!--Блок Каруселі-->
 <div class="container">
     <div class="row">
@@ -79,12 +82,9 @@
             <div class="section topics">
                 <h3>Topics</h3>
                 <ul>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">MySQL</a></li>
-                    <li><a href="#">Алгоритми</a></li>
-                    <li><a href="#">Налаштування софту</a></li>
+                    <?php foreach ($topics as $key => $topic): ?>
+                        <li><a href="#"><?= $topic['name']; ?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>
